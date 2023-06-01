@@ -1,0 +1,2 @@
+Deskripsi
+Anda diminta untuk mengembangkan sebuah aplikasi dengan dua peran, yaitu Creator dan Reviewer. Aplikasi ini akan memungkinkan Creator untuk membuat dokumen yang dapat disimpan terlebih dahulu sebelum di-submit. Setelah di-submit, dokumen akan diteruskan ke Reviewer yang dapat memberikan komentar pada dokumen tersebut. Pada tahap ini, Creator tidak dapat mengedit dokumen. Setelah Reviewer memberikan komentar, dokumen dikembalikan kepada Creator. Setelah proses ini selesai, tugas dianggap selesai.

@@ -18,8 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import create_document, submit_document, review_document
+
 
 urlpatterns = [
+    path('create/', create_document, name='create_document'),
+    path('submit/<uuid:document_id>/', submit_document, name='submit_document'),
+    path('review/<uuid:document_id>/', review_document, name='review_document'),
     path('admin/', admin.site.urls),
     path('api/', include([
         path('account/', include('apps.accounts.urls')),
@@ -28,4 +33,5 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 
